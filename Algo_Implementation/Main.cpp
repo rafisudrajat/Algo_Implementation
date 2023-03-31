@@ -32,9 +32,29 @@ void array_seq_test() {
 
 void linked_list_seq_test() {
 	try {
-		Sequence::Linked_List_Node A = Sequence::Linked_List_Node(5);
+		Sequence::Linked_List_Seq A = Sequence::Linked_List_Seq();
+		int arr[] = { 1,2,3,4,5 };
+		A.build(arr, 5);
+		std::cout << "first iter" << "\n";
+		A.iter();
+		std::cout << "SIZE: " << A.get_length() << "\n";
 
-			//sequence::Linked_List_Seq();
+		std::cout << "\n" << A.get_at(2) << " " << A.get_at(1)<<"\n";
+		A.delete_first();
+
+		std::cout << "second iter" << "\n";
+		A.iter();
+		std::cout << "SIZE: " << A.get_length() << "\n";
+		
+		A.insert_at(1, 10);
+		std::cout <<"\n"<< "third iter" << "\n";
+		A.iter();
+		std::cout << "SIZE: " << A.get_length() << "\n";
+
+		A.delete_last();
+		std::cout <<"\n"<< "fourth iter" << "\n";
+		A.iter();
+		std::cout << "SIZE: " << A.get_length() << "\n";
 
 	}
 	catch (const char* msg) {
@@ -45,7 +65,7 @@ void linked_list_seq_test() {
 
 int main() {
 	
-	//linked_list_seq_test();
-	array_seq_test();
+	//array_seq_test();
+	linked_list_seq_test();
 
 }

@@ -4,8 +4,7 @@ namespace Sequence {
 	{
 	public:
 		Linked_List_Node(int x);
-		~Linked_List_Node();
-		Linked_List_Node later_node(int i);
+		Linked_List_Node* later_node(int i);
 		int item;
 		Linked_List_Node* next;
 
