@@ -1,4 +1,6 @@
 x64/
+Algo_Implementation/x64/
+.vs/
 
 # Prerequisites
 *.d
