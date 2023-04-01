@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dynamic_Array_Seq.cpp" />
     <ClCompile Include="Linked_List_Seq.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Static_Array_Seq.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dynamic_Array_Seq.h" />
     <ClInclude Include="Linked_List_Seq.h" />
     <ClInclude Include="Static_Array_Seq.h" />
   </ItemGroup>

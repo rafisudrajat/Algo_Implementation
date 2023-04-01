@@ -24,12 +24,18 @@
     <ClCompile Include="Linked_List_Seq.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Dynamic_Array_Seq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Static_Array_Seq.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Linked_List_Seq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamic_Array_Seq.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

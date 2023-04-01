@@ -19,7 +19,7 @@ namespace Sequence {
 		void insert_last(int x);
 		int delete_last();
 
-	private:
+	protected:
 		int* A;
 		int size;
 		void _copy_forward(int i, int n, int* A, int j);
