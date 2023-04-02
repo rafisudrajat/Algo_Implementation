@@ -5,7 +5,8 @@
 
 void array_seq_test() {
 	try {
-		Sequence::Array_Seq A = Sequence::Array_Seq();
+		Sequence::Array_Seq<int> A;
+		
 		int arr[] = { 1,2,3 };
 		int sizeArr = sizeof(arr) / sizeof(arr[0]);
 		for (int i = 0;i < sizeArr;i++) {
@@ -13,14 +14,14 @@ void array_seq_test() {
 		}
 		A.iter();
 		A.insert_first(9);
-		std::cout << "Second Iter" << '\n';
+		std::cout << "second iter" << '\n';
 		A.iter();
 		std::cout << A.get_length() << " items \n";
 
 		std::cout << A.get_at(2) << '\n';
 
 		A.delete_last();
-		std::cout << "Third Iter" << '\n';
+		std::cout << "third iter" << '\n';
 		A.iter();
 		std::cout << A.get_length() << " items \n";
 
@@ -33,7 +34,7 @@ void array_seq_test() {
 
 void linked_list_seq_test() {
 	try {
-		Sequence::Linked_List_Seq A = Sequence::Linked_List_Seq();
+		Sequence::Linked_List_Seq<int> A = Sequence::Linked_List_Seq<int>();
 		int arr[] = { 1,2,3,4,5 };
 		A.build(arr, 5);
 		std::cout << "first iter" << "\n";
@@ -66,7 +67,7 @@ void linked_list_seq_test() {
 
 void dynamic_array_seq_test() {
 	try {
-		Sequence::Dynamic_Array_Seq A = Sequence::Dynamic_Array_Seq();
+		Sequence::Dynamic_Array_Seq<int> A = Sequence::Dynamic_Array_Seq<int>();
 		int arr[] = { 1,2,3 };
 		int sizeArr = sizeof(arr) / sizeof(arr[0]);
 		for (int i = 0;i < sizeArr;i++) {
@@ -99,7 +100,4 @@ int main() {
 	//array_seq_test();
 	//linked_list_seq_test();
 	dynamic_array_seq_test();
-
-	
-
 }
